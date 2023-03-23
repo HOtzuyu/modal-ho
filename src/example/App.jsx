@@ -1,15 +1,30 @@
-import React from "react";
-import { Modal } from "../lib/Modal";
-import './App.css'
+import React, { useState } from "react";
+import Modal from "../lib/Modal";
+const ParentComponent = () => {
+  const [showModal, setShowModal] = useState(false);
 
-function App() {
-    return (
-        <>
-        <h1>Show the modal</h1>
-        <Modal/>
-        
-        </>
-    )
-}
+  const handleClick = () => {
+    setShowModal(true);
+  };
 
-export default App;
+  const handleClose = () => {
+    setShowModal(false);
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Open Modal</button>
+      {showModal ? (
+        <Modal
+          title="Modal Title"
+          message="Modal Message"
+          onClose={handleClose}
+        />
+      ) : (
+        <></>
+      )}
+    </div>
+  );
+};
+
+export default ParentComponent;
