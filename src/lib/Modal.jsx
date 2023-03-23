@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Modal.css";
 
-const Modal = ({ title, message, onClose }) => {
+const Modale = ({ title, message, onClose }) => {
   const [showModal, setShowModal] = useState(true);
 
   const handleClose = () => {
@@ -37,4 +37,4 @@ const Modal = ({ title, message, onClose }) => {
   );
 };
 
-export default Modal;
+export default Modale;
