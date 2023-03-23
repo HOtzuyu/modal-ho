@@ -1,6 +1,7 @@
 {
   "name": "ho-modal",
   "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -19,7 +20,7 @@
     "build": " NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile": "del dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+    "compile": "del -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   },
   "eslintConfig": {
     "extends": [
@@ -43,17 +44,5 @@
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.3",
     "babel-cli": "^6.26.0"
-  },
-  "description": "A modal pluggin for react using `create-react-app` .",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HOtzuyu/modal-ho.git"
-  },
-  "author": "Jonhathan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HOtzuyu/modal-ho/issues"
-  },
-  "homepage": "https://github.com/HOtzuyu/modal-ho#readme"
+  }
 }
