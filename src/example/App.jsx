@@ -89,8 +89,7 @@ function App() {
         message="Hello, your message here"
         showModal={displayModal}
         hideModal={() => setDisplayModal(false)}
-        buttonText1="Ok"
-        buttonText2="Cancel"
+        buttonText="Ok"
       />
     </div>
   );
