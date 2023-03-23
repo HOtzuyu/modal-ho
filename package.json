@@ -1,6 +1,6 @@
 {
   "name": "ho-modal",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -50,7 +50,9 @@
     "react-dom": "^18.2.0"
   },
   "description": "A modal pluggin for react using `create-react-app` .",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HOtzuyu/modal-ho.git"
